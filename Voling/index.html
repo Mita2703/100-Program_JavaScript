@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voting Sederhana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Voting Sederhana</h1>
+    <form id="votingForm">
+      <label>
+        <input type="radio" name="candidate" value="Anies" /> Anies Baswedan
+      </label><br />
+      <label>
+        <input type="radio" name="candidate" value="Prabowo" /> Prabowo Subianto <br>
+      <label>
+        <input type="radio" name="candidate" value="Ganjar" /> Ganjar Pranowo
+      </label><br />
+      <button type="submit">Vote</button>
+    </form>
+
+    <h2>Hasil Voting</h2>
+    <ul id="hasilVoting"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
