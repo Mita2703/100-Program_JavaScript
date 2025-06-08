@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulasi Antrian</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simulasi Sistem Antrian</h1>
+
+    <div class="form-antrian">
+      <input type="text" id="nama" placeholder="Masukkan nama" />
+      <button onclick="tambahAntrian()">Tambah ke Antrian</button>
+      <button onclick="layaniAntrian()">Layani Antrian</button>
+    </div>
+
+    <h3>Antrian Saat Ini:</h3>
+    <ul id="daftarAntrian"></ul>
+
+    <p id="pesanLayanan"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

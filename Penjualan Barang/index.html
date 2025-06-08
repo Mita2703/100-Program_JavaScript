@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Program Penjualan Barang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Penjualan Barang</h1>
+
+    <label for="barang">Pilih Barang:</label>
+    <select id="barang">
+      <option value="15000">Pensil - Rp15.000</option>
+      <option value="30000">Pulpen - Rp30.000</option>
+      <option value="50000">Buku Tulis - Rp50.000</option>
+      <option value="100000">Tas Sekolah - Rp100.000</option>
+    </select>
+
+    <label for="jumlah">Jumlah:</label>
+    <input type="number" id="jumlah" min="1" placeholder="Masukkan jumlah">
+
+    <button onclick="hitungTotal()">Hitung Total</button>
+
+    <p id="hasil"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
