@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Konversi Berat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Konversi Satuan Berat</h2>
+
+    <input type="number" id="nilai" placeholder="Masukkan nilai berat">
+
+    <select id="dari">
+      <option value="kg">Kilogram (kg)</option>
+      <option value="g">Gram (g)</option>
+      <option value="ons">Ons</option>
+    </select>
+
+    <select id="ke">
+      <option value="kg">Kilogram (kg)</option>
+      <option value="g">Gram (g)</option>
+      <option value="ons">Ons</option>
+    </select>
+
+    <button onclick="konversiBerat()">Konversi</button>
+
+    <div id="hasil"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

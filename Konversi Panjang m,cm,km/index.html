@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Konversi Panjang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Konversi Satuan Panjang</h2>
+
+    <input type="number" id="nilai" placeholder="Masukkan nilai panjang">
+
+    <select id="dari">
+      <option value="m">Meter (m)</option>
+      <option value="cm">Centimeter (cm)</option>
+      <option value="km">Kilometer (km)</option>
+    </select>
+
+    <select id="ke">
+      <option value="m">Meter (m)</option>
+      <option value="cm">Centimeter (cm)</option>
+      <option value="km">Kilometer (km)</option>
+    </select>
+
+    <button onclick="konversiPanjang()">Konversi</button>
+
+    <div id="hasil"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
