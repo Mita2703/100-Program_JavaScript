@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Tebak Negara dari Bendera</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Tebak Negara dari Benderanya</h1>
+
+    <div class="flag-box">
+      <img id="flag" src="" alt="Bendera Negara" />
+    </div>
+
+    <input type="text" id="jawaban" placeholder="Tulis nama negara..." />
+    <button onclick="cekJawaban()">Cek Jawaban</button>
+    <p id="feedback"></p>
+    <p>Skor: <span id="skor">0</span></p>
+
+    <button onclick="nextSoal()">Soal Berikutnya</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- https://flagcdn.com/ -->

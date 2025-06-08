@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Pemesanan Barang</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Form Pemesanan Barang</h1>
+
+    <div class="form-input">
+      <label for="barang">Pilih Barang:</label>
+      <select id="barang" onchange="updateHarga()">
+        <option value="" disabled selected>Pilih</option>
+        <option value="Topi">Topi</option>
+        <option value="Sepatu">Sepatu</option>
+        <option value="Dress">Dress</option>
+        <option value="Jeans">Jeans</option>
+      </select>
+
+      <label for="harga">Harga Satuan:</label>
+      <input type="text" id="harga" disabled />
+
+      <label for="jumlah">Jumlah:</label>
+      <input type="number" id="jumlah" min="1" oninput="hitungTotal()" />
+
+      <label for="total">Total Harga:</label>
+      <input type="text" id="total" disabled />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

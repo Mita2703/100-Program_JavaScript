@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengatur Suhu Tubuh, Mita</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .result {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Pengatur Suhu Tubuh</h2>
+    <label for="suhu">Masukkan Suhu Tubuh (°C):</label>
+    <input type="number" id="suhu" step="0.1" placeholder="Contoh: 36.5">
+    <button onclick="cekSuhu()">Cek Suhu</button>
+    <div class="result" id="hasil"></div>
+  </div>
+
+  <script>
+    function cekSuhu() {
+      const suhu = parseFloat(document.getElementById('suhu').value);
+      const hasil = document.getElementById('hasil');
+
+      if (isNaN(suhu)) {
+        hasil.textContent = 'Masukkan suhu yang valid!';
+        hasil.style.color = 'red';
+        return;
+      }
+
+      if (suhu < 35) {
+        hasil.textContent = Suhu ${suhu}°C - Hipotermia!;
+        hasil.style.color = 'blue';
+      } else if (suhu >= 35 && suhu <= 37.5) {
+        hasil.textContent = Suhu ${suhu}°C - Suhu Normal;
+        hasil.style.color = 'green';
+      } else {
+        hasil.textContent = Suhu ${suhu}°C - Demam!;
+        hasil.style.color = 'red';
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 360px;
+  margin: 40px auto;
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.puzzle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 2px;
+  margin: 20px auto;
+}
+
+.tile {
+  background-image: url("WhatsApp\ Image\ 2024-09-14\ at\ 09.23.03_2dfbabdd.jpg");
+  background-size: 300px 300px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.empty {
+  background: #e5e7eb;
+  cursor: default;
+}
