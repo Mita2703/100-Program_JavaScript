@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container{
+  width: 500px;
+}
+.accordion{
+  background-color: #aa7676;
+  color: #444;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  transition: 0.4s;
+  margin-bottom: 5px;
+}
+.active, .accordion:hover{
+  background-color: #f75a5a;
+}
+.panel{
+  padding: 0 18px;
+  transition: all 0.7s ease-in-out;
+  background-color: #ec8b8b;
+  overflow: hidden;
+  max-height: 0;
+  margin-bottom: 5px;
+}

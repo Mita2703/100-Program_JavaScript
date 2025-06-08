@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #45f79e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container{
+  font-family: Tahoma;
+  background-color: rgb(206, 221, 221);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  padding-left: 30px;
+}
+input {
+  padding: 1px 7px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: 1px solid black;
+}
+label{
+  font-weight: 800;
+  color: black;
+  font-size: 18px;
+}
+h1 {
+  border-radius: 12px;
+  font-size: 2.3rem;
+  color: rgb(5, 5, 6);
+  text-align: center;
+  padding-top: 15px;
+}
+p {
+  font-size: 17px;
+  color: black;
+}
+button{
+  width: 130px;
+  height: 23px;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-left: 100px;
+}
